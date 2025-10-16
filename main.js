@@ -8,3 +8,9 @@ const sum = arr.reduce(
 );
 
 console.log(sum);
+
+function main() {
+  console.log("main");
+}
+
+main();
