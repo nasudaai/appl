@@ -9,6 +9,12 @@ const sum = arr.reduce(
 
 console.log(sum);
 
+
+//map
+const mapped = arr.map((x) => x * 2);
+
+console.log(mapped);
+
 function main() {
   console.log("main");
 }
