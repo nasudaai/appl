@@ -15,7 +15,8 @@
   "type": "commonjs",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "esbuild main.js --outdir=./ --watch --servedir=./"
   },
   "devDependencies": {
     "esbuild": "^0.25.11"
