@@ -2,6 +2,6 @@
 
 echo "hello"
 
-echo $1 >> yen.txt
+echo $@ >> yen.txt
 
 cat yen.txt
