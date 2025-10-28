@@ -1,1 +1,2 @@
-[ -e time.sh ] && echo time.sh 
+
+[ -e "$1" ] && echo $1 
