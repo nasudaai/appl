@@ -1,4 +1,5 @@
 memoapp/out.txt
 memoapp/yen.txt
 memoapp/out/
+**/out/
 node_modules/
