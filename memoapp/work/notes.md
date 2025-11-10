@@ -27,3 +27,7 @@ git diff
 git diff --cached
 git diff HEAD
 ```
+
+## plan
+
+yen_insert のコマンドライン引数の数を変数に入れる。各引数も変数に入れる。
