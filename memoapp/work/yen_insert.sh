@@ -3,9 +3,17 @@
 all=$@
 
 
-echo "$@ $(date +"%Y-%m-%d %H:%M:%S")" 
+echo "today: $(date +"%Y-%m-%d %H:%M:%S")" 
 
 echo "arguments: $#"
 
-echo "$@ $(date +"%Y-%m-%d %H:%M:%S")" >> out/out.txt
-cat out/out.txt | tail -n 5
+if [ $# -eq 5 ]; then
+
+
+    echo "$@ $(date +"%Y-%m-%d %H:%M:%S")" >> out/out.txt
+    echo "tail 5lines"
+    cat out/out.txt | tail -n 5
+else
+
+    echo "5 arguments are required."
+fi
