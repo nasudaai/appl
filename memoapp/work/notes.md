@@ -19,3 +19,11 @@ mainファイルとして扱う。中の処理を別ファイルに移す。関�
 `tail -n 1 <file> | ./read_pipe.sh `
 
 `done < <\(tail -n 3 "$file"\)`
+
+## git
+
+```
+git diff
+git diff --cached
+git diff HEAD
+```
