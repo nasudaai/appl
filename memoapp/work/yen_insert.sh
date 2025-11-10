@@ -11,7 +11,7 @@ if [ $# -eq 5 ]; then
 
 
     echo "$@ $(date +"%Y-%m-%d %H:%M:%S")" >> out/out.txt
-    echo "tail 5lines"
+    echo "last 5 lines will be displayed. "
     cat out/out.txt | tail -n 5
 else
 
