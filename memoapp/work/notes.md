@@ -28,6 +28,14 @@ git diff --cached
 git diff HEAD
 ```
 
+### branch
+
+```
+git switch main
+git pull origin main
+```
+
+
 ## plan
 
 yen_insert のコマンドライン引数の数を変数に入れる。各引数も変数に入れる。

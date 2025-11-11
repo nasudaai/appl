@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-echo "## $1"
+echo "create $1 # $2"
 
 create () {
 
@@ -11,4 +11,4 @@ create () {
     echo  "# $title"
 }
 
-"$1" "$2" "$3"
+create "$1" "$2"
