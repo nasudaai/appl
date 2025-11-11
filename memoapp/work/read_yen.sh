@@ -4,9 +4,10 @@
 printf "Please input\n"
 
 read -p "yen: " yen
+read -p "types:" types
 
-echo "$yen"
+echo "$yen, $types, "
 
-arr=($yen)
+arr=($yen $types)
 
 echo "n: ${#arr[@]}"

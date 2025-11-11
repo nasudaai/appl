@@ -1,5 +1,7 @@
 # note
 
+いちいちbranch切ってコード書く前に、planとかtodoに、すること書くかな。
+
 ## 関数化 or 機能の分割
 
 ## 足したいこと
@@ -39,3 +41,6 @@ git pull origin main
 ## plan
 
 yen_insert のコマンドライン引数の数を変数に入れる。各引数も変数に入れる。
+
+planは他に移したかも
+
