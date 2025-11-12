@@ -1,6 +1,10 @@
 # note
 
-いちいちbranch切ってコード書く前に、planとかtodoに、すること書くかな。
+いちいちbranch切ってコード書く前に、planとかtodoに、すること書くかな。11-11
+
+朝は、git branch git status git switch main から.11-12
+
+todo.mdの末尾に今日の日付を挿入する朝スクリプトを書くくらいが今はちょうどいいかも。11-12
 
 ## 関数化 or 機能の分割
 
