@@ -34,6 +34,12 @@ git diff --cached
 git diff HEAD
 ```
 
+```
+git checkout main          # main に切り替え
+git diff other-branch      # 他のブランチとの差分を表示
+
+```
+
 ### branch
 
 ```
