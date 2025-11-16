@@ -1,5 +1,6 @@
 # appl
 
+そろそろ整理が必要だ
 ## memo
 
 passwordの省略 default 900min
