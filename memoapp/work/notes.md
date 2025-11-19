@@ -26,6 +26,7 @@ mainファイルとして扱う。中の処理を別ファイルに移す。関�
 
 `done < <\(tail -n 3 "$file"\)`
 
+source なら、トップレベルでreturnが使える
 ## git
 
 ```
