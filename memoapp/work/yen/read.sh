@@ -6,5 +6,8 @@ read -p "yen?: " yen
 
 echo $yen
 
-read -p "types?: " types
+read -p "Number of correct keystrokes?: " correct_keysttokes
 echo "$types"
+
+read -p "Typing per second?: " typing_per_second
+echo "$typing_per_second"
