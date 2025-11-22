@@ -11,3 +11,6 @@ echo "$types"
 
 read -p "Typing per second?: " typing_per_second
 echo "$typing_per_second"
+
+read -p "miss?" miss
+echo "$miss"
