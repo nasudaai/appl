@@ -7,5 +7,6 @@ if [ ! $args -eq 5 ]; then
 fi
 
 data=$@
+date=$(date +"%Y-%m-%d")
 
-echo "$data, date"
+echo "$data $date"
