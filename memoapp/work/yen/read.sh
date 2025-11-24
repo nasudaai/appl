@@ -14,3 +14,6 @@ echo "$typing_per_second"
 
 read -p "miss?" miss
 echo "$miss"
+
+read -p "cource?" cource
+echo "$cource"
