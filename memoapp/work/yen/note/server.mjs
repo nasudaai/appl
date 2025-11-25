@@ -1,8 +1,8 @@
 import http from 'http';
-
+import { readFileSync } from 'fs';
 const port = 3001
 
-const html = "<textarea></textarea>";
+const html = readFileSync("./index.html", "utf-8");
 console.log(html)
 
 const server = http.createServer((req, res) => {
