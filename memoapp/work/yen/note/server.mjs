@@ -6,6 +6,22 @@ const html = readFileSync("./index.html", "utf-8");
 console.log(html)
 
 const server = http.createServer((req, res) => {
+  
+  if (req.url === "/styles.css") {
+    res.writeHead(200, { "content-Type": "text/css; charset=utf-8" });
+    res.end(`
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    textarea {
+
+    }
+    `);
+    return;
+  }
+
   res.writeHead(200, { 'Content-Type': 'text/html; charaset=utf-8' });
   res.end(html);
 });
