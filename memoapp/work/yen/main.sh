@@ -8,5 +8,6 @@ fi
 
 data=$@
 date=$(date +"%Y-%m-%d")
+all_typipng_count=$(($2 + $4))
 
-echo "$data $date"
+echo "$data $date $all_typipng_count"
