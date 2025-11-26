@@ -8,6 +8,8 @@ fi
 
 data=$@
 date=$(date +"%Y-%m-%d")
+
+#calculate the total number of typings.
 all_typipng_count=$(($2 + $4))
 
 echo "$data $date $all_typipng_count"
