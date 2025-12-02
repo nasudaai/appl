@@ -14,9 +14,12 @@ const server = http.createServer((req, res) => {
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+      margin: 0;
     }
     textarea {
-
+      width: 80%;
+      height: 80%;
     }
     `);
     return;
