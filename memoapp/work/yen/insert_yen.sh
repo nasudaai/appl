@@ -4,12 +4,20 @@ args=$@
 count_arg=$#
 date=$(date +"%Y-%m-%d %H:%M:%S")
 
+miss="$4"
+all_keystroke=$(( $2 + miss ))
+
 echo "$count_arg"
 
 
 if [ $count_arg -eq 5 ]; then
 
-    echo "$@ $date" >> out/out.txt
+    
+    echo "$@ $all_keystroke $date" >> out/out.txt
     cat out/out.txt
+
+else
+    
+    printf "引数が足りないよ\n"
 
 fi
