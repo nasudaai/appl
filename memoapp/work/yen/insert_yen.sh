@@ -7,7 +7,8 @@ date=$(date +"%Y-%m-%d %H:%M:%S")
 miss="$4"
 all_keystroke=$(( $2 + miss ))
 
-echo "$count_arg"
+echo "$date"
+echo "args: $count_arg"
 
 
 if [ $count_arg -eq 5 ]; then
@@ -15,7 +16,11 @@ if [ $count_arg -eq 5 ]; then
     
     echo "$@ $all_keystroke $date" >> out/out.txt
     printf "%s\n" "$@"
-    cat out/out.txt | tail -n 5
+
+elif [ $count_arg -eq 0 ]; then
+
+
+    cat out/out.txt | tail -n 6 | head -n 5
 
 else
     
