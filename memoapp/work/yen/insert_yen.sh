@@ -14,7 +14,8 @@ if [ $count_arg -eq 5 ]; then
 
     
     echo "$@ $all_keystroke $date" >> out/out.txt
-    cat out/out.txt
+    printf "$s\n" "$@"
+    cat out/out.txt | tail -n 5
 
 else
     
