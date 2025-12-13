@@ -16,6 +16,7 @@ const server = http.createServer((req, res) => {
       align-items: center;
       height: 100vh;
       margin: 0;
+      background-color: gray;
     }
     textarea {
       width: 80%;
