@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#insert.shに加えよう
 
 a=$1
 b=$2
