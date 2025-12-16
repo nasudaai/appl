@@ -22,7 +22,7 @@ if [ $count_arg -eq 5 ]; then
 
     
     echo "$@ $all_keystroke $date" >> out/out.txt
-    printf "%s " "$@" "$all_keystroke" "$perc"
+    printf "%s " "$@" "$all_keystroke" "$date" "$perc"
     printf "\n"
 #    printf "%s\n" "$@"
 
