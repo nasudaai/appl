@@ -8,3 +8,6 @@ const __dirname = path.dirname(__filename);
 const filePath = path.join( __dirname, "txt/txt.md");
 console.log(filePath);
 
+const txt = readFileSync(filePath, "utf-8");
+console.log(txt);
+
