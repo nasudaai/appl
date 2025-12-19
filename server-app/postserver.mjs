@@ -1,5 +1,6 @@
 import http from 'node:http';
 
+// create server
 http.createServer((req, res) => {
 
   if (req.method === "POST") {
