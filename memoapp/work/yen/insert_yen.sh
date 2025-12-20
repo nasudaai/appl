@@ -20,10 +20,14 @@ echo "args: $count_arg"
 
 if [ $count_arg -eq 5 ]; then
 
-    
-    echo "$@ $all_keystroke $date" >> out/out.txt
     printf "%s " "$@" "$all_keystroke" "$date" "$perc"
     printf "\n"
+    
+    # write to a file
+    echo "$@ $date" >> out/out.txt
+
+    cat out/out.txt | tail -n 1
+
 #    printf "%s\n" "$@"
 
 elif [ $count_arg -eq 0 ]; then
