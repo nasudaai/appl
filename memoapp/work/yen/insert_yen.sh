@@ -2,6 +2,12 @@
 
 args=$@
 count_arg=$#
+
+if [ $count_arg -eq 0 ]; then
+    
+    cat -n out/out.txt | tail -n 5
+    exit
+fi
 date=$(date +"%Y-%m-%d %H:%M:%S")
 
 miss="$4"
@@ -28,12 +34,7 @@ if [ $count_arg -eq 5 ]; then
 
     cat out/out.txt | tail -n 1
 
-#    printf "%s\n" "$@"
-
-elif [ $count_arg -eq 0 ]; then
-
-
-    cat out/out.txt | tail -n 6 | head -n 5
+#    cat out/out.txt | tail -n 6 | head -n 5
 
 else
     
