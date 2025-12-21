@@ -7,6 +7,7 @@ if [ $count_arg -eq 0 ]; then
 
 
 # 3 5 10 case
+#    ./show_cource.sh
     
     tail -n 5 out/out.txt
     exit
@@ -34,6 +35,8 @@ if [ $count_arg -eq 5 ]; then
     printf "\n"
     
     # write to a file
+    read -p "Write to a file? y/n" answer
+    echo "$answer"
     echo "$@ $date" >> out/out.txt
 
     cat out/out.txt | tail -n 1
