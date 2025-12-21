@@ -4,10 +4,14 @@ args=$@
 count_arg=$#
 
 if [ $count_arg -eq 0 ]; then
+
+
+# 3 5 10 case
     
-    cat -n out/out.txt | tail -n 5
+    tail -n 5 out/out.txt
     exit
 fi
+
 date=$(date +"%Y-%m-%d %H:%M:%S")
 
 miss="$4"
