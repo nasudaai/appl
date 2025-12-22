@@ -1,3 +1,4 @@
 #!/bin/bash
 
-curl 
+port=$1
+curl http://localhost:$port 
