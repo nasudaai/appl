@@ -3,3 +3,4 @@ memoapp/yen.txt
 memoapp/out/
 **/out/
 node_modules/
+**/out.txt
