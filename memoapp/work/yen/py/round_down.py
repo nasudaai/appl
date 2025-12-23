@@ -28,4 +28,4 @@ print(f"{round_perc}%")
 
   #floor
 floor_perc = math.floor( calculation_result * 10000 ) / 100
-print(floor_perc)
+print(f"{floor_perc}%")
