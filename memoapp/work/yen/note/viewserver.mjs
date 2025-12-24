@@ -6,6 +6,8 @@ import { readFileSync } from 'node:fs';
 const template = readFileSync("note/template.html", "utf-8");
 console.log(template);
 
+const args = process.argv;
+console.log(args);
 const file = process.argv[2];
 //console.log(file);
 
