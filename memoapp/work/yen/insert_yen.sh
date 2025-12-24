@@ -1,6 +1,5 @@
 #!/bin/bash
 
-args=$@
 count_arg=$#
 
 if [ $count_arg -eq 0 ]; then
@@ -12,6 +11,12 @@ if [ $count_arg -eq 0 ]; then
     tail -n 5 out/out.txt
     exit
 fi
+
+
+args=("$@")
+printf "%s\n" "yen: ${args[0]}"
+printf "%s" "correct keystrokes: ${args[1]}"
+printf "\n"
 
 date=$(date +"%Y-%m-%d %H:%M:%S")
 
