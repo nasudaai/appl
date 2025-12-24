@@ -31,15 +31,18 @@ echo "args: $count_arg"
 
 if [ $count_arg -eq 5 ]; then
 
-    printf "%s " "$@" "$all_keystroke" "$date" "$perc"
+# add var name
+    printf "%s " "$@" "all keystroke: $all_keystroke" "$date" "$perc"
     printf "\n"
     
     # write to a file
-    read -p "Write to a file? y/n" answer
-    echo "$answer"
+    read -p "Write to a file? y/n: " answer
+    echo "your answer: $answer"
     echo "$@ $date" >> out/out.txt
 
-    cat out/out.txt | tail -n 1
+    echo "writed >> out/out.txt: $(tail -n 1 out/out.txt)"
+
+#    cat out/out.txt | tail -n 1
 
 #    cat out/out.txt | tail -n 6 | head -n 5
 
