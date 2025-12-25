@@ -16,7 +16,8 @@ fi
 args=("$@")
 printf "%s\n" "yen: ${args[0]}"
 printf "%s\n" "correct keystrokes: ${args[1]}"
-printf "%s" "types par second: ${args[2]}"
+printf "%s\n" "types par second: ${args[2]}"
+printf "%s" "miss: ${args[3]}"
 printf "\n"
 
 date=$(date +"%Y-%m-%d %H:%M:%S")
