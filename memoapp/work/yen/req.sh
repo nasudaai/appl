@@ -1,4 +1,5 @@
 #!/bin/bash
 
-port=$1
+read -p "port number?: " port
+# port=$1
 curl http://localhost:$port 
