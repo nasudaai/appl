@@ -1,9 +1,15 @@
 import { appendFileSync, readFileSync } from 'node:fs';
 
-const data = "data";
+const args = process.argv
+console.log(args)
+
+const cmdVar = args[2];
+console.log("append: " + cmdVar);
+
+//const data = "data";
 
 
-appendFileSync("out.txt", data + "\n", "utf-8");
+appendFileSync("out.txt", cmdVar + "\n", "utf-8");
 
 
 const fileData = readFileSync("out.txt", "utf-8");
