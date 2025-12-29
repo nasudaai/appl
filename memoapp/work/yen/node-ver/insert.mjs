@@ -5,5 +5,9 @@ const args = process.argv.slice(2);
 
 for (const argv of args) {
 
-  process.stdout.write(argv);
+  const data = argv + " ";
+
+  process.stdout.write(data);
 }
+
+process.stdout.write("\n");
