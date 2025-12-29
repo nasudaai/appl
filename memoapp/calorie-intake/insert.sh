@@ -5,3 +5,6 @@ kcal=$2
 date=$(date +'%Y-%m-%d')
 
 echo "$food $kcal $date"
+
+
+# >> file
