@@ -1,13 +1,9 @@
 import { createServer } from 'node:http';
+import { URLSearchParams } from 'node:url';
+import { appendFileSync } from 'node:fs';
 
 
-const html = `
-<h1>html</h1>
-  <form action="/test" method="POST">
-    <input name="message" placeholder="Type something" />
-    <button type="submit">Send</button>
-  </form>
-`
+let lastMessage = "";
 
 
 const server = createServer((req, res) => {
@@ -22,8 +18,13 @@ const server = createServer((req, res) => {
     req.on("end", () => {
 
       body = Buffer.concat(body).toString();
+
+      const params = new URLSearchParams(body);
+      lastMessage = params.get("message") || "";
+
+      appendFileSync("post.txt", params + "\n", "utf-8");
+
       console.log("Post data:", body);
-      
 
 
       res.writeHead(302, { Location: "/" });
@@ -38,7 +39,14 @@ const server = createServer((req, res) => {
     res.end(JSON.stringify(data));
   
   } else {
-
+    const html = `
+    <h1>html</h1>
+      <p>last message: ${lastMessage}</p>
+      <form action="/test" method="POST">
+        <input name="message" placeholder="Type something" />
+        <button type="submit">Send</button>
+      </form>
+    `
 
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end(html);
