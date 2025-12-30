@@ -1,4 +1,4 @@
-import { appendFileSync } from 'node:fs';
+import { appendFileSync, readFileSync } from 'node:fs';
 
 const arr = process.argv.slice(2);
 
@@ -17,3 +17,6 @@ for (const data of arr) {
 */
 
 appendFileSync("out/out.txt", line, "utf-8");
+
+const fileData = readFileSync("out/out.txt", "utf-8");
+process.stdout.write(fileData);
