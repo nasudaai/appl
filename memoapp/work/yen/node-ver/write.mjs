@@ -15,3 +15,5 @@ for (const data of arr) {
   process.stdout.write(dataAndSpace);
 }
 */
+
+appendFileSync("out/out.txt", line, "utf-8");
