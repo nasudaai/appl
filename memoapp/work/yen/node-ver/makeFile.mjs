@@ -1,10 +1,9 @@
 import { writeFileSync, readFileSync, existsSync } from 'node:fs';
 
+const args = process.argv.slice(2);
 
-
-
-const fileName = process.argv[2];
-const title = process.argv[3];
+const fileName = args[0];
+const title = args[1];
 
 if (existsSync(fileName)) {
   process.stdout.write("existing " + fileName + "\n");
